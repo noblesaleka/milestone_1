@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i&display=swap');
 
 
 /*----------------------------------------general styles*/
@@ -12,6 +13,17 @@ body {
     height: 100vh;
     }
 
+.uppercase {
+    text-transform:uppercase;
+}
+
+h1,h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'PT Serif', serif;
+}
 
 /*----------------------------------------color pallette*/
 .jumbotron_bg_color {
@@ -41,9 +53,11 @@ nav {
 }
 
 /*----------------------------------------jumbotron styles*/
+
+
+
 .jumbotron_style {
     font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
     text-align: center;
     color: #fff;
 }
