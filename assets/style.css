@@ -47,3 +47,10 @@ nav {
     text-align: center;
     color: #fff;
 }
+
+/*--------------------------------------------music container*/
+
+.music_container {
+    z-index:1;
+    background-color: #fff;
+}
