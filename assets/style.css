@@ -6,7 +6,6 @@
 body {
     margin:0;
     padding:0;
-    background-color: pink;
 }
 
 .container-fluid {
@@ -25,6 +24,14 @@ p {
     font-family: 'PT Serif', serif;
 }
 
+.navbar a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.audio_name {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /*----------------------------------------color pallette*/
 .jumbotron_bg_color {
     background-color: rgba(0,0,0,0.25);
@@ -40,10 +47,14 @@ nav {
     z-index: 1;
 }
 
+.nav_title {
+    font-size: 3em;
+}
+
 /*----------------------------------------video styles*/
 
 #headder_video {
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0;
     min-height: 100%;
@@ -60,6 +71,11 @@ nav {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     color: #fff;
+    min-width: 40%;
+    position: absolute;
+    top: 30vh;
+    right: 10px;
+    border-radius: 40px;
 }
 
 /*--------------------------------------------music container*/
@@ -67,4 +83,38 @@ nav {
 .music_container {
     z-index:1;
     background-color: #fff;
+    text-align:center;
+    padding:30px;
+}
+
+h2 {
+    font-size: 2.5em;
+    text-align:center;
+    padding:30px;
+}
+
+
+
+/*.gallery_container {
+    height: 90vh;
+    width: 90vw;
+
+
+.carousel-item img {
+    height: 70vh;
+    width: auto;  
+}
+}*/
+
+
+
+
+
+/*--------------------------------------------footer*/
+footer {
+    background-color: yellow;
+}
+
+.social_heading {
+    display: inline-block;
 }
