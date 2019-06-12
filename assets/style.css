@@ -3,14 +3,15 @@
 
 
 /*----------------------------------------general styles*/
-body {
+html {
     margin:0;
     padding:0;
 }
 
-.container-fluid {
-    height: 100vh;
-    }
+.container-fluid{
+    margin:0;
+    padding: 0;
+}
 
 .uppercase {
     text-transform:uppercase;
@@ -33,9 +34,7 @@ p {
 }
 
 /*----------------------------------------color pallette*/
-.jumbotron_bg_color {
-    background-color: rgba(0,0,0,0.25);
-}
+
 
 
 
@@ -54,28 +53,11 @@ nav {
 /*----------------------------------------video styles*/
 
 #headder_video {
-    position: absolute;
-    right: 0;
-    top: 0;
+    margin:0;
+    padding:0;
     min-height: 100%;
     min-width: 100%;
     z-index: -1;
-    
-}
-
-/*----------------------------------------jumbotron styles*/
-
-
-
-.jumbotron_style {
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    color: #fff;
-    min-width: 40%;
-    position: absolute;
-    top: 30vh;
-    right: 10px;
-    border-radius: 40px;
 }
 
 /*--------------------------------------------music container*/
@@ -87,24 +69,33 @@ nav {
     padding:30px;
 }
 
-h2 {
-    font-size: 2.5em;
+
+/*--------------------------------------------gallery container*/
+
+.gallery_container {
+    z-index:1;
+    background-color: #fff;
     text-align:center;
     padding:30px;
 }
 
-
-
-/*.gallery_container {
-    height: 90vh;
-    width: 90vw;
-
-
-.carousel-item img {
-    height: 70vh;
-    width: auto;  
+.gallery_container img {
+    min-height: 200px;
+    min-width: 200;
 }
-}*/
+
+
+.caption {
+      font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+
+
+
 
 
 
