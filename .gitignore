@@ -1,6 +1,6 @@
 .c9
 
-metadata/environment/assets
-.nakignore
-out_of_memory
-project.settings
+.c9/metadata/environment/assets
+.c9/.nakignore
+.c9/out_of_memory
+.c9/project.settings
