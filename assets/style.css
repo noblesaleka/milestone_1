@@ -6,11 +6,11 @@
 html {
     margin:0;
     padding:0;
-    background: black;
 }
 
 body {
-    background-color: transparent;
+    background-color: black;
+   
 }
 
 .container-fluid {
@@ -71,7 +71,7 @@ h1,h2, h3, h4, h5, h6 {
     padding:0;
     min-height: 100%;
     min-width: 100%;
-    z-index: -1;
+   
 }
 
 .img-background {
@@ -79,26 +79,29 @@ h1,h2, h3, h4, h5, h6 {
     position: absolute;
     top:0;
     right:auto;
-    z-index:-1;
+    z-index: -1;
     
+}
+
+.img-fluid {
+    border-radius: 50px;
 }
 
 /*----------------------------------------hit song styles*/
 .blank {
-   background-color: transparent;
+    background-color: rgba(0,0,0,0);
     padding-top: 250px;
 }
 
 .hit-song {
-    background-color: #fff;
     border-radius: 10px;
     padding:10px;
     margin: auto;
+    background-color: white;
+    
+   
 }
 
-.music_headding {
-    padding: 20px;
-}
 
 
 
@@ -125,10 +128,11 @@ h1,h2, h3, h4, h5, h6 {
  /*----------------------------------------music styles*/
  .music_container {
         padding: 10px 0 0 10PX;
-        background-color: #22a8ca;
+        background-color: #0498be;
         width: 100vw;
         margin: 20px auto;
         border-radius: 10px;
+        text-align: center;
     }
 
 .audio-label {
@@ -150,14 +154,54 @@ audio {
     }
     }
  
-@media (min-width:992px) {
-    .music_container {
+ .pad {
+    padding: 20px;
+}
+
+/*----------------------------------------gallery styles*/
+ .gallery_container {
+        padding: 10px 0 0 10PX;
+        background-color: #fbd303;
+        width: 100vw;
+        margin: 10px auto;
+        border-radius: 10px;
         text-align: center;
-    
     }
+    
+.gallery-font {
+    
 }
  
  
+/*----------------------------------------music video styles*/
+.musicvideo_container {
+    padding: 10px 0 0 10PX;
+        background-color: #fe7360;
+        width: 100vw;
+        margin: 10px auto;
+        border-radius: 10px;
+        text-align: center;
+}
+
+
+.musicvideo {
+    width: 350px;
+    height: 200px;
+}
+ 
+ 
+ 
+ 
+ /*----------------------------------------contact us styles*/
+ 
+.booking-container  {padding: 10px 0 0 10PX;
+        background-color: #22a8ca;
+        width: 100vw;
+        margin: 20px auto;
+        border-radius: 10px;
+        text-align: center;
+}
+
 /*----------------------------------------footer styles*/
 
 .social-links {
