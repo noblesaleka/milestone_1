@@ -14,81 +14,125 @@
     <title>Milestone 1 | The Monkees</title>
 </head>
 
-
-
 <body>
     <div class="container-fluid">
-        <!--------------------------------------------------------------------------------------HEADDER---->
-        <!--------------------NAVIGATION---->
-        <div class="row">
-            <div class="col-12">
-                <nav class="navbar navbar-dark bg-dark sticky-top navbar-expand-lg" style="background-color: rgba(0,0,0,0.5)">
-                    <div class="container">
-                        <a class="navbar-brand uppercase nav_title" href="#">The Monkees</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav justify-content-end">
-                                <a class="nav-item nav-link" href="#music">Music</a>
-                                <a class="nav-item nav-link" href="#gallery">Gallery</a>
-                                <a class="nav-item nav-link" href="#booking">Booking</a>
-                                <a class="nav-item nav-link" href="#contactus">Contact</a>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!--------------------VIDEO BACKGROUND---->
 
-        <div class="row">
-            <div class="col-12">
-                <video autoplay controls muted loop id="headder_video">
-        <source src="assets/video/TheMonkees.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+        <!--------------------------------------------------------------------------------------HEADDER---->
+        <nav class="navbar navbar-dark navbar-expand-sm sticky-top">
+            <a href="/" class="navbar-brand uppercase">The Monkees</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="active nav-item mr-2 uppercase"><a class="nav-link" href="index.html">Music</a></li>
+                    <li class="active nav-item mr-2 uppercase"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="active nav-item mr-2 uppercase"><a class="nav-link" href="book.html">Booking</a></li>
+                    <li class="active nav-item mr-2 uppercase"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--------------------------------------------------------------------------------VIDEO BACKGROUND---->
+
+        <div class="row no-gutters">
+            <div class="col-12 d-none d-lg-block ">
+                <video autoplay muted loop class="" id="headder_video">
+                            <source src="assets/video/TheMonkees.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
             </div>
         </div>
-        <!--------------------MUSIC---->
-        <div class="row">
-            <div class="col-12">
-                <div class="music_container" id="music">
-                    <h2 class="uppercase">Music</h2>
-                    <div class="row audio">
-                        <div class="col-6 uppercase">
-                            <p class="audio_name">I'm a Believer</p>
-                        </div>
-                        <div class="col-6 audio_clip">
-                            <audio controls>
-                <source src="assets/audio/ImABeliever.mp3" type="audio/mp3"> 
-                Your browser does not support the audio element.
-            </audio>
-                        </div>
-                    </div>
-                    <div class="row audio">
-                        <div class="col-6 uppercase">
-                            <p class="audio_name">Clarksville</p>
-                        </div>
-                        <div class="col-6 audio_clip">
-                            <audio controls>
-                <source src="assets/audio/Clarksville.mp3" type="audio/mp3"> 
-                Your browser does not support the audio element.
-            </audio>
-                        </div>
-                    </div>
-                    <div class="row audio">
-                        <div class="col-6 uppercase">
-                            <p class="audio_name">Day Dream Believer</p>
-                        </div>
-                        <div class="col-6 audio_clip">
-                            <audio controls>
+
+        <!--------------------------------------------------------------------------------IMAGE BACKGROUND---->
+        <div class="container-fluid">
+            <div class="row d-sm-block d-lg-none no-gutters">
+                <div class="col-12 img-background ">
+                    <img src="assets/images/monkees_background_sm.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row d-sm-none d-md-block d-lg-none no-gutters">
+                <div class="col-12 img-background ">
+                    <img src="assets/images/monkees_background_md.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+         <!--------------------------------------------------------------------------------------NEW HIT SONG---->
+        <div class="blank">
+        <div class="container hit-song">
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <h6 class="uppercase">The New Single</h6>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-12 ">
+                    <h4 class="uppercase">Daydream believer</h4>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-12 ">
+                <audio controls>
                 <source src="assets/audio/DaydreamBeliever.mp3" type="audio/mp3"> 
                 Your browser does not support the audio element.
-            </audio>
-                        </div>
-                    </div>
-                    <div class="row audio">
+                </audio>
+                
+                </div>
+            </div>
+        </div>
+        </div>
+
+ <!--------------------------------------------------------------------------------------MUSIC---->
+ <div class="container music_container">
+     <div class="container">
+         <div class="row">
+             <div class="col-12 music_headding">
+                 <h2 class="uppercase">Music</h2>
+             </div>
+         </div>
+         <div class="row no-gutters">
+             <div class="col-4">
+                 <p class="audio-label uppercase">I'm a Believer</p>
+             </div>
+             <div class="col-8">
+                 <audio controls>
+                     <source src="assets/audio/ImABeliever.mp3" type="audio/mp3"> 
+                     Your browser does not support the audio element.
+                 </audio>
+             </div>
+         </div>
+          <div class="row no-gutters">
+             <div class="col-4">
+                 <p class="audio-label uppercase">Clarksville</p>
+             </div>
+             <div class="col-8">
+                 <audio controls>
+                      <source src="assets/audio/Clarksville.mp3" type="audio/mp3"> 
+                     Your browser does not support the audio element.
+                 </audio>
+             </div>
+         </div>
+          <div class="row no-gutters">
+             <div class="col-4">
+                 <p class="audio-label uppercase">Stepping Stone</p>
+             </div>
+             <div class="col-8">
+                 <audio controls>
+                      <source src="assets/audio/SteppingStone.mp3" type="audio/mp3"> 
+                     Your browser does not support the audio element.
+                 </audio>
+             </div>
+         </div>
+         
+         
+         
+    <!--    
+                   
+                    
+                    <div class="row no-gutters audio">
                         <div class="col-6 uppercase">
                             <p class="audio_name">Stepping Stone</p>
                         </div>
@@ -101,93 +145,76 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!--------------------GALLERY---->
-        <div class="row">
-            <div class="col-12">
-                <div class="gallery_container" id="gallery">
-                    <h2 class="uppercase">Gallery</h2>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col col-12 col-md-6 col-lg-3">
-                                <img src="assets/images/dj.jpg" class="d-block w-100" alt="Davy Jones">
-                                <p class="caption uppercase">Davy Jones</p>
-                            </div>
-                            <div class="col col-12 col-md-6 col-lg-3">
-                                <img src="assets/images/mn.jpg" class="d-block w-100" alt="Michael Nesmith">
-                                <p class="caption uppercase">Michael Nesmith</p>
-                            </div>
-                            <div class="col col-12 col-md-6 col-lg-3">
-                                <img src="assets/images/pt.jpg" class="d-block w-100" alt="Peter Tork">
-                                <p class="caption uppercase">Peter Tork</p>
-                            </div>
-                            <div class="col col-12 col-md-6 col-lg-3">
-                                <img src="assets/images/md.jpg" class="d-block w-100" alt="Micky Dolenz">
-                                <p class="caption uppercase">Micky Dolenz</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <img src="assets/images/monkees.jpg" class="d-block w-100" alt="The Monkees full band">
-                                <p class="caption uppercase">The Monkees Full Band</p>
-                            </div>
-                        </div>
-                    </div>
+        </div>-->
+     </div>
+ </div>
+ 
+        
+        
+        
+
+        <!--------------------------------------------------------------------------------------FOOTER---->
+        <footer class="page-footer">
+            <div class="row no-gutters">
+                <div class="col-9">
+                    <h4 class="uppercase">
+                        Subscribe & Follow!
+                    </h4>
                 </div>
-            </div>
-        </div>
-
-        <!--------------------BOOKING---->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="booking_container" id="booking">
-                    <h2 class="uppercase">Booking</h2>
-                    <p>Would you like to have us at your next big event? We are available for Weddings, Birthday or Christmas parties. Download our list of services and Schedule.</p>
-
-
-                </div>
-            </div>
-        </div>
-        <!--------------------CONTACT US---->
-        <div class="row">
-            <div class="col-12">
-                <div class="contactus_container" id="contactus">
-                    <h2 class="uppercase">Contact Us</h2>
-
-                    <form class="form">
-                        <input class="form-control" type="text" name="Name" id="name" placeholder="Name" required/>
-                        <input class="form-control" type="text" name="Email" id="emailaddress" placeholder="Email address" required/>
-                        <textarea class="form-control" rows="5" name="Message" id="message" placeholder="Message"></textarea>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <!--------------------FOOTER---->
-        <footer>
-            <ul class="list-inline social-links">
-                <li class="list-inline-item">
-                    <a target="_blank" href="#">
+        
+            
+                <div class="col-3">
+                    <ul class="list-inline social-links">
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
                             <i class="fa fa-facebook" aria-hidden="true"></i>
                             <span class="sr-only">Facebook</span>
                         </a>
-                </li>
-                <li class="list-inline-item">
-                    <a target="_blank" href="#">
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
                             <i class="fa fa-twitter" aria-hidden="true"></i>
                             <span class="sr-only">Twitter</span>
                         </a>
-                </li>
-                <li class="list-inline-item">
-                    <a target="_blank" href="#">
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
                             <i class="fa fa-youtube" aria-hidden="true"></i>
                             <span class="sr-only">YouTube</span>
                         </a>
-                </li>
-            </ul>
-    </div>
-    </footer>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <form>
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailsubscribe" placeholder="Enter email to subscribe">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <button type="submit" class="btn btn-outline-dark ">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+
+
+
+
+
+        </footer>
+
+
+
+
     </div>
 </body>
+
 
 </html>

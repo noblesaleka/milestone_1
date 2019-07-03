@@ -6,11 +6,16 @@
 html {
     margin:0;
     padding:0;
+    background: black;
 }
 
-.container-fluid{
-    margin:0;
-    padding: 0;
+body {
+    background-color: transparent;
+}
+
+.container-fluid {
+    padding:0;
+    margin: 0;
 }
 
 .uppercase {
@@ -21,36 +26,45 @@ h1,h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
-p {
-    font-family: 'PT Serif', serif;
+/*----------------------------------------background color palettes*/
+.black-background{
+    background: black;
 }
 
-.navbar a {
-    font-family: 'Montserrat', sans-serif;
+.barn-red {
+    background-color: #750705;
 }
-
-.audio_name {
-    font-family: 'Montserrat', sans-serif;
-}
-
-/*----------------------------------------color pallette*/
-
-
 
 
 /*----------------------------------------navigation styles*/
-
-
-nav {
-    background-color: #fafafa;
-    z-index: 1;
+.navbar {
+    background: black;
+    min-width: 100%;
 }
 
-.nav_title {
-    font-size: 3em;
+.navbar-brand {
+     color: white;  
+     font-weight: 700;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 2em;
 }
 
-/*----------------------------------------video styles*/
+
+.nav-item {
+ color: white;   
+ font-weight: 400;
+ font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-toggler {
+    color: white; 
+}
+
+.collapse {
+    text-align: right;
+}
+
+/*----------------------------------------home page styles*/
 
 #headder_video {
     margin:0;
@@ -60,82 +74,92 @@ nav {
     z-index: -1;
 }
 
-/*--------------------------------------------music container*/
+.img-background {
+    padding: 0;
+    position: absolute;
+    top:0;
+    right:auto;
+    z-index:-1;
+    
+}
 
-.music_container {
+/*----------------------------------------hit song styles*/
+.blank {
+   background-color: transparent;
+    padding-top: 250px;
+}
+
+.hit-song {
     background-color: #fff;
-    text-align:center;
-    padding:30px;
+    border-radius: 10px;
+    padding:10px;
+    margin: auto;
 }
 
-
-/*--------------------------------------------gallery container*/
-
-.gallery_container {
-
-    background-color: #fff;
-    text-align:center;
-    padding:30px;
-}
-
-.gallery_container img {
-    min-height: 200px;
-    min-width: 200;
-}
-
-
-.caption {
-      font-family: 'Montserrat', sans-serif;
-}
-
-
-/*--------------------------------------------booking container*/
-
-.booking_container {
-    background-color: #fff;
-    text-align:center;
-    padding:30px;
+.music_headding {
+    padding: 20px;
 }
 
 
 
-
-/*--------------------------------------------contactus container*/
-
-.contactus_container {
-    background-color: #fff;
-    text-align:center;
-    padding:30px;
+@media (min-width:768px) {
+    .blank {
+        padding-top: 500px;
+    }
+    .hit-song {
+        margin: auto;
+    }
+    
 }
 
+@media (min-width:992px) {
+    .blank {
+        padding-top: 0;
+        text-align: center;
+        width: 80vw;
+        margin: auto;
+    }
+}
+ 
+ 
+ /*----------------------------------------music styles*/
+ .music_container {
+        padding: 10px 0 0 10PX;
+        background-color: #22a8ca;
+        width: 100vw;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
 
-
-
-
-
-/*--------------------------------------------footer*/
-footer {
-    background-color: #343a40;
-    text-align: center;
+.audio-label {
+    font-family: 'Montserrat', sans-serif;    
 }
 
-.social_heading {
-    display: inline-block;
+audio {
+    width: 220px;
+    height: 50px;
+} 
+ 
+@media (min-width:768px) {
+    audio {
+    width: 400px;
+    height: 50px;
+} 
+    .music_container {
+        padding-bottom: 20px;
+    }
+    }
+ 
+@media (min-width:992px) {
+    .music_container {
+        text-align: center;
+    
+    }
 }
+ 
+ 
+/*----------------------------------------footer styles*/
 
 .social-links {
-     display: inline-block;
-      
-  }
-
-.social-links a i{
-     font-size: 1.5em;
-     padding: 30px;
-     color: #fff;
-}
-
-.social-links a:hover i{
-     font-size: 1.5em;
-     padding: 30px;
-     color: grey;
+    margin:0;
 }
