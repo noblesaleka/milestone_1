@@ -14,9 +14,9 @@ As a member of the media, I would like to see photos of The Monkees at recent ev
 As an event coordinator, I would like to contact The Monkees to book potential gigs fo my clients.
 As a social media infludencer, I would like to follow The Monkees so I can share Facebook, Instagram and Youtube videos with my fans.
 
-Mobile wireframe: ![Image description](/assets/images/wireframe.jpg)
-Tablet wireframe: []
-Desktop wireframe: []
+Mobile wireframe: https://user-images.githubusercontent.com/28603945/60632713-2a03d580-9dd5-11e9-8d67-0f09b08e385b.jpg
+Tablet wireframe: https://user-images.githubusercontent.com/28603945/60632717-2d975c80-9dd5-11e9-8c13-dc56c101b286.jpg
+Desktop wireframe: https://user-images.githubusercontent.com/28603945/60632723-30924d00-9dd5-11e9-9f10-128e03db7041.jpg
 
 ## Features
 
