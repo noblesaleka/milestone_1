@@ -102,9 +102,13 @@ h1,h2, h3, h4, h5, h6 {
    
 }
 
+.hit-song audio {
+    width: 300px;
+    height: 50px;
+} 
 
 
-
+/* tablet screen*/
 @media (min-width:768px) {
     .blank {
         padding-top: 500px;
@@ -112,9 +116,15 @@ h1,h2, h3, h4, h5, h6 {
     .hit-song {
         margin: auto;
     }
-    
+    .hit-song audio {
+    width: 500px;
+    height: 50px;
+} 
 }
 
+
+
+/* desktop screen*/
 @media (min-width:992px) {
     .blank {
         padding-top: 0;
@@ -168,11 +178,7 @@ audio {
         text-align: center;
     }
     
-.gallery-font {
-    
-}
- 
- 
+
 /*----------------------------------------music video styles*/
 .musicvideo_container {
     padding: 10px 0 0 10PX;
@@ -187,15 +193,24 @@ audio {
 .musicvideo {
     width: 350px;
     height: 200px;
+    padding: 20px;
+    border:none;
 }
  
- 
+
+/* desktop screen*/
+@media (min-width:992px) {
+    .musicvideo {
+        width: 500px;
+        height: 300px;
+}
+}
  
  
  /*----------------------------------------contact us styles*/
  
 .booking-container  {padding: 10px 0 0 10PX;
-        background-color: #22a8ca;
+        background-color: #f67f16;
         width: 100vw;
         margin: 20px auto;
         border-radius: 10px;
@@ -206,4 +221,12 @@ audio {
 
 .social-links {
     margin:0;
+}
+
+.subscribe {
+    color: white;
+}
+
+.fa i {
+    font-size: 30px;
 }

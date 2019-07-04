@@ -19,16 +19,16 @@
 
         <!--------------------------------------------------------------------------------------HEADDER---->
         <nav class="navbar navbar-dark navbar-expand-sm sticky-top">
-            <a href="/" class="navbar-brand uppercase">The Monkees</a>
+            <a href="index.html" class="navbar-brand uppercase">The Monkees</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="active nav-item mr-2 uppercase"><a class="nav-link" href="index.html">Music</a></li>
-                    <li class="active nav-item mr-2 uppercase"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                    <li class="active nav-item mr-2 uppercase"><a class="nav-link" href="book.html">Booking</a></li>
-                    <li class="active nav-item mr-2 uppercase"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="active nav-item mr-2 uppercase"><a class="nav-link" href="#music">Music</a></li>
+                    <li class="active nav-item mr-2 uppercase"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="active nav-item mr-2 uppercase"><a class="nav-link" href="#musicvideos">Music Videos</a></li>
+                    <li class="active nav-item mr-2 uppercase"><a class="nav-link" href="#booking">Booking</a></li>
                 </ul>
             </div>
         </nav>
@@ -63,17 +63,17 @@
          <!--------------------------------------------------------------------------------------NEW HIT SONG---->
         <div class="blank">
         <div class="container hit-song">
-            <div class="row no-gutters">
+            <div class="row ">
                 <div class="col-12">
                     <h6 class="uppercase">The New Single</h6>
                 </div>
             </div>
-            <div class="row no-gutters">
+            <div class="row ">
                 <div class="col-12 ">
                     <h4 class="uppercase">Daydream believer</h4>
                 </div>
             </div>
-            <div class="row no-gutters">
+            <div class="row ">
                 <div class="col-12 ">
                 <audio controls>
                 <source src="assets/audio/DaydreamBeliever.mp3" type="audio/mp3"> 
@@ -86,7 +86,7 @@
         </div>
 
  <!--------------------------------------------------------------------------------------MUSIC---->
- <div class="container music_container">
+ <div class="container music_container" id="music">
      <div class="container">
          <div class="row">
              <div class="col-12 pad">
@@ -131,7 +131,7 @@
  </div>
  
  <!--------------------------------------------------------------------------------------GALLERY---->   
- <div class="black-background">
+ <div class="black-background" id="gallery">
  <div class="container gallery_container ">
      <div class="container">
          <div class="row">
@@ -208,7 +208,7 @@
    
  <!--------------------------------------------------------------------------------------MUSIC VIDEOS---->   
  <div class="black-background">
- <div class="container musicvideo_container ">
+ <div class="container musicvideo_container" id="musicvideos">
      <div class="container">
         <div class="row">
              <div class="col-12 pad">
@@ -217,33 +217,28 @@
          </div>
         
         <div class="row">
-            <div class="col-sm-12">
-                <iframe class="musicvideo" src="https://www.youtube.com/watch?v=AKs43dHBSWA">
+            <div class="col-sm-12 col-md-6">
+                <iframe class="musicvideo" src="https://www.youtube.com/embed/AKs43dHBSWA" allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <iframe  class="musicvideo" src="https://www.youtube.com/embed/CFUOnT0ZnUc"  allowfullscreen >
                 </iframe>
             </div>
-            <div class="col-sm-12">
-                <iframe  class="musicvideo"src="https://www.youtube.com/watch?v=CFUOnT0ZnUc">
+            <div class="col-sm-12 col-md-6">
+                <iframe  class="musicvideo" src="https://www.youtube.com/embed/bTEz-7QjsyI"  allowfullscreen >
                 </iframe>
             </div>
-            <div class="col-sm-12">
-                <iframe  class="musicvideo" src="https://www.youtube.com/watch?v=bTEz-7QjsyI">
+            <div class="col-sm-12 col-md-6">
+                <iframe class="musicvideo" src="https://www.youtube.com/embed/SubpzqswJRE"  allowfullscreen >
                 </iframe>
             </div>
-            <div class="col-sm-12">
-                <iframe class="musicvideo" src="https://www.youtube.com/watch?v=SubpzqswJRE">
-                </iframe>
-            </div>
-            
         </div>
-     
+     </div>
  </div>
-    </div>
-   </div>
-   
-   
-   
+</div>
+
  <!--------------------------------------------------------------------------------------BOOKING---->
- <div class="container booking-container">
+ <div class="container booking-container" id="booking">
      <div class="container">
          <div class="row">
              <div class="col-12 pad">
@@ -254,24 +249,30 @@
          <div class="row">
              <div class="col-12">
                  <div class="form-group">
-                <input type="text" class="form-control" id="email" aria-describedby="emailsubscribe" placeholder="Name">
+                <input type="text" class="form-control" id="name"  placeholder="Name">
                 </div>
              </div>
              <div class="col-12">
                  <div class="form-group">
-                <input type="email" class="form-control" id="email" aria-describedby="emailsubscribe" placeholder="email">
+                <input type="email" class="form-control" id="email"  placeholder="email">
                 </div>
              </div>
              <div class="col-12">
                  <div class="form-group">
-                <input type="date" class="form-control" id="date" aria-describedby="date" placeholder="Event Date">
+                <input type="date" class="form-control" id="date" >
                 </div>
              </div>
              <div class="col-12">
                  <div class="form-group">
-                <input type="textarea" class="form-control" rows="3" name="Eventdetails" placeholder="Event details"/>  
+                <input type="text" class="form-control" name="Eventdetails" placeholder="Event details"/>  
                 </div>
              </div>
+             <div class="col-12">
+                 <div class="form-group">
+                 <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+             </div>
+             
              
          </div>
          
@@ -285,7 +286,7 @@
         <footer class="page-footer">
             <div class="row no-gutters">
                 <div class="col-9">
-                    <h4 class="uppercase">
+                    <h4 class="uppercase subscribe">
                         Subscribe & Follow!
                     </h4>
                 </div>
@@ -294,19 +295,19 @@
                 <div class="col-3">
                     <ul class="list-inline social-links">
                         <li class="list-inline-item">
-                            <a target="_blank" href="#">
+                            <a target="_blank" href="https://www.facebook.com">
                             <i class="fa fa-facebook" aria-hidden="true"></i>
                             <span class="sr-only">Facebook</span>
                         </a>
                         </li>
                         <li class="list-inline-item">
-                            <a target="_blank" href="#">
+                            <a target="_blank" href="https://www.twitter.com">
                             <i class="fa fa-twitter" aria-hidden="true"></i>
                             <span class="sr-only">Twitter</span>
                         </a>
                         </li>
                         <li class="list-inline-item">
-                            <a target="_blank" href="#">
+                            <a target="_blank" href="https://www.youtube.com/">
                             <i class="fa fa-youtube" aria-hidden="true"></i>
                             <span class="sr-only">YouTube</span>
                         </a>
@@ -316,26 +317,10 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <form>
-                        <div class="row">
-                            <div class="col-8">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="email" aria-describedby="emailsubscribe" placeholder="Enter email to subscribe">
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <button type="submit" class="btn btn-outline-dark ">Submit</button>
-                            </div>
-                        </div>
-                    </form>
+                    <p class="uppercase subscribe">Copyright 2019 | Saleka Noble | Inspired by Bruno Mars 24K Magic World Tour</p>
                 </div>
             </div>
             
-
-
-
-
-
         </footer>
    
     </div>
